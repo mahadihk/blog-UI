@@ -1,0 +1,30 @@
+{
+  "name": "blog-ui",
+  "version": "1.0.0",
+  "description": "A User Interface of a blogging site.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahadixyz/blog-UI.git"
+  },
+  "author": "Mahadi Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahadixyz/blog-UI/issues"
+  },
+  "homepage": "https://github.com/mahadixyz/blog-UI#readme",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.0.2",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  }
+}
