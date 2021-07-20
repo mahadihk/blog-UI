@@ -1,0 +1,138 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.topMenu
+{
+    @include gradient;
+
+    
+    .brandLogo
+    {
+        max-width: 80%;
+
+        @include media-breakpoint-down(md)
+		{
+			max-width: 40%;
+		}
+    }
+
+    li
+    {
+        padding: 0 0.2rem;
+
+        a
+        {
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 1rem;
+
+            @include media-breakpoint-down(md)
+            {
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+
+    .faIcons
+    {
+        a
+        {
+            color: $white;
+            
+            i
+            {
+                font-size: 1.2rem;
+                margin-left: 1rem;
+            }
+        }
+    }   
+   
+}
+
+.menuBar
+{
+    
+    li
+    {
+        padding: 0 0.7rem;
+
+        a
+        {
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+    }
+   
+    .navbar-toggler 
+    {
+        &:focus 
+        {
+            outline: none;
+        }
+        border: none;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        padding: 0 0 0.15rem 0.35rem;
+    
+    
+        .navbar-toggler-bar,
+        .navbar-toggler-bar::before,
+        .navbar-toggler-bar::after
+        {
+            width: 25px;
+            height: 2px;
+            background-color: $white;
+            position: absolute;
+        }
+    
+        .navbar-toggler-bar::before
+        {
+            content: "";
+            display: block;
+            top: -7px;
+        }
+    
+        .navbar-toggler-bar::after
+        {
+            content: "";
+            display: block;
+            bottom: -7px;
+        }
+    
+        .navbar-toggler-bar
+        {
+            transition: 0.2s;
+            transform: rotate(0deg);
+        }    
+    
+    }    
+    
+    // Navbar as a X when active state
+    .navbar-toggler.active 
+    {
+    
+        .navbar-toggler-bar
+        {
+            transition: 0.2s;
+            transform: rotate(45deg); // 45+360
+        }
+        .navbar-toggler-bar::before
+        {
+            top: 0;
+            opacity: 0;
+        }
+        .navbar-toggler-bar::after
+        {
+            bottom: 0;
+            transform: rotate(-90deg);
+        }    
+    }
+    
+
+}

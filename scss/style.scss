@@ -1,0 +1,12 @@
+// Use _custom.scss as a module
+@use "custom";
+
+//import Partials (Components)
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+
+//import Partials (Sections)
+@use "sections/navbar";
+@use "sections/featured";
