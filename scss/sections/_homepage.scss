@@ -1,0 +1,139 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.catBox
+{
+    @include media-breakpoint-up(sm)
+    {
+        padding: 0 0.5rem 0 0;
+    }
+
+    .catPostBox
+    {
+        width: 100%;
+        position: relative;
+        padding: 1rem 0;
+        box-sizing: border-box;
+
+        &:hover .catPostImg > img
+        {
+            object-position: center;
+            filter: grayscale(0%);
+        } 
+
+        .catPostImg
+        {
+            position: relative;
+            min-height: 400px;
+
+            img
+            {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                object-position: top;
+                transition: all 500ms ease;
+                filter: grayscale(80%);
+            }
+        }
+
+        .catPostText
+        {
+            position: absolute;
+            top: 175px;
+            padding: 1.5rem;
+            width: 76%;
+            left: 12%;
+            box-sizing: border-box;
+            background-color: #fbfbfb;
+            box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+
+            .cat-title-link
+            {
+                text-decoration: none;
+                color: $primary;    
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+
+            .cat-post-title
+            {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+
+            .cat-post-subtitle
+            {
+                font-size: 0.8rem;
+                color: $gray-600;
+            }
+        }
+    }
+
+    .catPostItem
+    {
+        min-height: 120px;    
+        padding: 1rem 0;
+        position: relative;
+        box-sizing: border-box;
+        
+        &:hover .cat-small-img
+        {
+            transform: scale(1.5);
+            filter: grayscale(0%);
+        }
+
+        .cat-title-link
+        {
+            text-decoration: none;
+            color: $primary;    
+            width: 100%;
+            height: 100%;
+            display: flex; 
+        }
+
+        .cat-sm-img-box
+        {
+            overflow: hidden;
+            position: relative;
+            height: 120px;
+            box-sizing: border-box;
+
+            .badge
+            {
+                position: absolute;
+                bottom: 5px;
+                left: 5px;
+            }
+
+            .cat-small-img
+            {
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                object-position: top;
+                filter: grayscale(0%);
+                transition: all 200ms;
+            }
+
+        }
+        
+
+        .cat-post-small
+        {        
+            .cat-post-title
+            {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            .cat-post-subtitle
+            {
+                font-size: 0.8rem;
+                color: $gray-600;
+            }
+        }
+    }
+
+}
