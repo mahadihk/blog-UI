@@ -188,6 +188,11 @@
         padding: 1rem 0;
         box-sizing: border-box;
 
+        @include media-breakpoint-down(md)
+        {
+            padding: 0.5rem 0;
+        }
+
         &:hover .catPostImg > img
         {
             object-position: center;
@@ -197,12 +202,17 @@
         .catPostImg
         {
             position: relative;
-            min-height: 400px;
+            min-height: 350px;
+
+            @include media-breakpoint-down(lg)
+            {
+                min-height: 320px;
+            }
 
             img
             {
                 width: 100%;
-                height: 200px;
+                height: 250px;
                 object-fit: cover;
                 object-position: top;
                 transition: all 500ms ease;
@@ -213,13 +223,25 @@
         .catPostText
         {
             position: absolute;
-            top: 175px;
+            top: 130px;
             padding: 1.5rem;
-            width: 76%;
-            left: 12%;
+            width: 86%;
+            left: 7%;
             box-sizing: border-box;
             background-color: #fbfbfb;
             box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
+
+            @include media-breakpoint-down(lg)
+            {
+                top: 125px;
+                padding: 1.2rem;
+            }
+
+            @include media-breakpoint-down(md)
+            {
+                top: 115px;
+                padding: 1rem;
+            }
 
             .cat-title-link
             {
@@ -297,7 +319,6 @@
             }
 
         }
-        
 
         .cat-post-small
         {        
@@ -320,9 +341,18 @@
 // Recent Posts Section
 .recentPosts
 {
-    @include media-breakpoint-up(sm)
+    min-height: 452px;
+    padding: 0 0.5rem 0 0;
+
+    @include media-breakpoint-down(lg)
     {
-        padding: 0 0.5rem 0 0;
+        min-height: 480px;
+    }
+
+    @include media-breakpoint-down(md)
+    {
+        min-height: 445px;
+        padding: 0;
     }
 
     .recentPostBox
@@ -389,34 +419,26 @@
             
             @include media-breakpoint-down(lg)
             {                 
-                width: 86%;
-                top: 140px; 
-                left: 7%;             
-                padding: 1rem;
-            }
-
-            @include media-breakpoint-down(sm)
-            {                 
                 width: 90%;
                 top: 120px; 
                 left: 5%;             
-                padding: 0.8rem;
-            }
+                padding: 1rem;
+            }  
 
             .recent-post-title
             {
                 font-size: 1.3rem;
                 font-weight: bold;
+
                 @include media-breakpoint-down(md)
                 {
                     font-size: 1rem;
                 }
             }
 
-            .recent-post-subtitle
+            p
             {
-                font-size: 0.8rem;
-                color: $gray-600;
+                font-size: 1rem;
             }
         }
     }
