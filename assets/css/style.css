@@ -11218,7 +11218,7 @@ textarea.form-control-lg {
   background-color: #0f7dc2;
 }
 .sidebar .recentComments {
-  max-height: 90px;
+  height: 120px;
   position: relative;
   box-sizing: border-box;
 }
@@ -11228,7 +11228,7 @@ textarea.form-control-lg {
 }
 .sidebar .recentComments .cmnt-sm-img-box .cmnt-img {
   width: 100%;
-  height: 80px;
+  height: 100px;
   object-fit: cover;
   object-position: center;
 }
@@ -11246,6 +11246,21 @@ textarea.form-control-lg {
 @media (max-width: 767.98px) {
   .sidebar .recentComments .cmnt-post-small .cmnt-post-title {
     font-size: 1.2rem;
+  }
+}
+.sidebar .recentComments .cmnt-post-small .post-date {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 991.98px) {
+  .sidebar .recentComments .cmnt-post-small .post-date {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .sidebar .recentComments .cmnt-post-small .post-date {
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
