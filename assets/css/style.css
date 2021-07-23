@@ -11297,4 +11297,19 @@ textarea.form-control-lg {
   }
 }
 
+@media (min-width: 576px) {
+  footer.container .row {
+    padding: 0;
+  }
+}
+footer.container .row .footerLink {
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+}
+footer.container .row .footerLink:hover {
+  color: #dcdcdc;
+  border-bottom: 1px solid #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

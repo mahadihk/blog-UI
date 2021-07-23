@@ -1,0 +1,25 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// Featured posts
+
+footer.container .row
+{
+    @include media-breakpoint-up(sm)
+    {
+        padding: 0;
+    }
+
+    .footerLink
+    {
+        text-decoration: none;
+        font-style: italic;
+        color: $white;
+
+        &:hover
+        {
+            color: #dcdcdc;
+            border-bottom: 1px solid $white;
+        }
+    }
+}
