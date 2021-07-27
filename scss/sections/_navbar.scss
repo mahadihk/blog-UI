@@ -33,21 +33,7 @@
             }
         }
 
-    }
-
-    .faIcons
-    {
-        a
-        {
-            color: $white;
-            
-            i
-            {
-                font-size: 1.2rem;
-                margin-left: 1rem;
-            }
-        }
-    }   
+    }  
    
 }
 
@@ -58,12 +44,46 @@
     {
         padding: 0 0.7rem;
 
-        a
+        .nav-link
         {
-            color: $white !important;
+            color: #f0f0f0 !important;
             text-transform: capitalize;
-            font-weight: 700;
             font-size: 1.25rem;
+            position: relative;
+
+            &::before
+            {
+                content: " ";
+                background-color: #fafafa;
+                width: 0%;
+                height: 0.1rem;
+                display: block;
+                position: absolute;
+                top: 0.2rem;
+                left: 0.5rem;
+                transition: all 300ms;   
+                                
+                @include media-breakpoint-down(lg)
+                {                    
+                    left: 0.2rem;
+                }
+
+            }
+
+            &:hover
+            {
+                color: #ffffff !important;
+            }
+
+            &:hover::before
+            {               
+                width: 70%;   
+                
+                @include media-breakpoint-down(lg)
+                {
+                    width: 20%;
+                }           
+            }
         }
 
     }
