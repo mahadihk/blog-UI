@@ -11180,6 +11180,41 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
+.recPost:hover .recPostImg {
+  transform: rotateZ(5deg) scale(1.3);
+}
+.recPost .recImgBox {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  max-height: 250px;
+}
+@media (max-width: 991.98px) {
+  .recPost .recImgBox {
+    max-height: 300px;
+  }
+}
+@media (max-width: 767.98px) {
+  .recPost .recImgBox {
+    max-height: 250px;
+  }
+}
+.recPost .recImgBox .recPostImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 600ms;
+}
+.recPost .recPostContent .recPostTitle {
+  font-size: 1.6rem;
+}
+@media (max-width: 767.98px) {
+  .recPost .recPostContent .recPostTitle {
+    margin-top: 1rem;
+  }
+}
+
 .sidebar .authorInfo .authorPic {
   width: 60%;
   border-radius: 50%;
