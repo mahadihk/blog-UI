@@ -11484,4 +11484,23 @@ footer.container .footer-bottom .faIcons .nav-item a {
   line-height: 2.3rem;
 }
 
+.postDetails .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: #6522f3;
+}
+.postDetails .breadcrumb .breadcrumb-item a:hover {
+  color: #198754;
+}
+.postDetails .figure {
+  width: 60%;
+  display: block !important;
+  margin: 0 auto 1rem;
+}
+.postDetails .figure .pd-img {
+  width: 100%;
+}
+.postDetails .figure .figure-caption {
+  color: #6522f3;
+}
+
 /*# sourceMappingURL=style.css.map */

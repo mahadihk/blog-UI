@@ -1,0 +1,35 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.postDetails
+{
+    .breadcrumb .breadcrumb-item a
+    {
+        text-decoration: none;
+        color: $secondary;
+
+        &:hover
+        {
+            color: $success;
+        }
+    }
+
+    .figure
+    {
+        width: 60%;   
+        display: block !important;     
+        margin: 0 auto 1rem;
+
+        .pd-img
+        {
+            width: 100%;
+        }
+        
+        .figure-caption
+        {
+            color: $secondary;
+        }
+    }
+
+    
+}
