@@ -53,10 +53,10 @@
     <div class="container">
         <div class="row g-4 pt-3">
             <!-- Content: Post -->
-            <div class="col-md-8 col-sm-12">                
+            <div class="col-md-8 col-sm-12 ps-0">                
                 
-                <!-- Recent Posts Start -->                 
-                <div class="row mb-3 py-3 px-2 mx-0 border postDetails">
+                <!-- Single Posts Start -->                 
+                <div class="row py-3 px-2 mx-0 border postDetails">
                     
                     <div class="col">   
                         
@@ -69,7 +69,7 @@
                                 <li class="breadcrumb-item active" aria-current="page">Post title Lorem ipsum dolor sit amet</li>
                             </ol>
                         </nav>
-
+                        
                         <p class="mb-0">
                             <span class="badge rounded-pill bg-danger p-2">
                                 <i class="far fa-lightbulb"></i> Random
@@ -99,9 +99,9 @@
                         <p class="lead">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod possimus tempore fuga culpa, maiores debitis praesentium eveniet consequuntur id repudiandae eos sapiente ut a quam in iure modi ab, laborum, expedita commodi magnam. Repellendus earum itaque error. Pariatur alias nulla rem voluptatem. Rerum quis quidem animi! Deleniti suscipit asperiores accusantium ullam beatae! Molestiae tempore nulla distinctio deleniti rem doloremque magnam, deserunt possimus inventore recusandae necessitatibus voluptatem blanditiis culpa dolorem sed repellendus sint nemo mollitia vel nostrum odit earum cum saepe id. Eius beatae facere iure consequatur fugit dicta error officiis hic quisquam praesentium, sed iusto eaque sit ducimus corrupti?
                         </p>
-
+                        
                         <img src="assets/img/featured/2.jpg" class="img-fluid d-block my-2 rounded" alt="...">
-
+                        
                         <p class="lead">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut perferendis a similique vel, quisquam veniam harum iusto sequi corporis est libero quibusdam velit facere, porro inventore nesciunt ea quas nam?
                         </p>
@@ -114,23 +114,61 @@
                         
                     </div>
                     
-                </div>               
+                </div>          
                 
-                <!-- Recent Posts End -->    
+                <!-- More Posts Start -->
+                <div class="row py-3 mx-0 morePostsBox">
+
+                    <div class="col-12 pb-3 px-0 mx-0">
+                        <span class="mp-title">More post for you:</span>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12 col-sm-12 box-left">
+                        <div class="row morePosts p-2 border bg-light">                        
+                            <div class="col-4 mp-img-box">
+                                <img class="mp-img rounded" src="assets/img/featured/1.jpg" alt="">
+                            </div>
+                            <div class="col-8 mp-post-small px-2">
+                                <a href="#" class="mp-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12 col-sm-12 box-right">
+                        <div class="row morePosts p-2 border bg-light">                        
+                            <div class="col-4 mp-img-box">
+                                <img class="mp-img rounded" src="assets/img/featured/1.jpg" alt="">
+                            </div>
+                            <div class="col-8 mp-post-small px-2">
+                                <a href="#" class="mp-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- More Posts Start -->
+                
+                <!-- Single Posts End -->    
                 
             </div>
             
-            <!-- Sidebar -->
+            <!-- Sidebar Start -->
             <div class="col-md-4 col-sm-12 sidebar">
                 
                 <!-- Search Start -->
-                <div class="row search">  
+                <div class="row search"> 
                     
                     <div class="col-12 py-2 ps-4 bg-dark text-white">
                         <p class="fs-5 mb-0">Search</p>
                     </div>     
                     
-                    <div class="col-12 py-4">
+                    <div class="col-12 my-2 py-4 border">
                         
                         <form action="#">
                             <div class="form-group has-search">
@@ -149,7 +187,9 @@
                     <div class="col-12 py-2 ps-4 bg-dark text-white">
                         <p class="fs-5 mb-0">Author</p>
                     </div>
-                    
+                </div>
+                <div class="row border my-2">
+
                     <div class="col-4 col-md-12 col-lg-12 text-center pt-4 authorInfo">
                         <img src="assets/img/propic.jpg" alt="" class="authorPic">                        
                     </div>
@@ -164,15 +204,18 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel ratione praesentium cupiditate veritatis reiciendis. Optio placeat ipsa aliquam quos aliquid!
                         </p>
                     </div>
-                </div>
+
+                </div>  
                 <!-- Author Info End -->
                 
                 <!-- Find Me section Start -->
-                <div class="row pb-4">
-                    <div class="col-12 py-2 ps-4 mb-3 bg-dark text-white">
+                <div class="row">
+                    <div class="col-12 py-2 ps-4 bg-dark text-white">
                         <p class="fs-5 mb-0">Connect with me</p>
                     </div>
-                    
+                </div>
+
+                <div class="row border p-3 my-2">
                     <div class="col-6 d-grid connectMe p-1">
                         <a href="#" class="btn btn-linkedin rounded-0 text-white">
                             <i class="fab fa-linkedin"></i> | Linkedin
@@ -194,7 +237,7 @@
                             <i class="fab fa-twitter"></i> | Twitter
                         </a>
                     </div>
-                </div>                  
+                </div>               
                 
                 <!-- Find Me section End -->
                 
@@ -206,63 +249,68 @@
                     </div>
                 </div>                   
                 
-                <div class="row recentComments py-3">                        
-                    <div class="col-4 cmnt-sm-img-box">
-                        <img class="cmnt-img rounded" src="assets/img/featured/1.jpg" alt="">
-                    </div>
-                    <div class="col-8 cmnt-post-small px-2">
-                        <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
-                        <p class="text-muted post-date">
-                            <i class="far fa-calendar-alt"></i> July 21, 2021
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row recentComments py-3">                        
-                    <div class="col-4 cmnt-sm-img-box">
-                        <img class="cmnt-img rounded" src="assets/img/featured/4.jpg" alt="">
-                    </div>
-                    <div class="col-8 cmnt-post-small px-2">
-                        <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>  
-                        <p class="text-muted post-date">
-                            <i class="far fa-calendar-alt"></i> July 21, 2021
-                        </p> 
-                    </div>
-                </div>
-                
-                <div class="row recentComments py-3">                        
-                    <div class="col-4 cmnt-sm-img-box">
-                        <img class="cmnt-img rounded" src="assets/img/featured/3.jpg" alt="">
-                    </div>
-                    <div class="col-8 cmnt-post-small px-2">
-                        <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
-                        <p class="text-muted post-date">
-                            <i class="far fa-calendar-alt"></i> July 21, 2021
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row recentComments py-3">                        
-                    <div class="col-4 cmnt-sm-img-box">
-                        <img class="cmnt-img rounded" src="assets/img/featured/1.jpg" alt="">
-                    </div>
-                    <div class="col-8 cmnt-post-small px-2">
-                        <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
-                        <p class="text-muted post-date">
-                            <i class="far fa-calendar-alt"></i> July 21, 2021
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="row recentComments py-3">                        
-                    <div class="col-4 cmnt-sm-img-box">
-                        <img class="cmnt-img rounded" src="assets/img/featured/2.jpg" alt="">
-                    </div>
-                    <div class="col-8 cmnt-post-small px-2">
-                        <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
-                        <p class="text-muted post-date">
-                            <i class="far fa-calendar-alt"></i> July 21, 2021
-                        </p>
+                <div class="row">
+                    <div class="col-12 my-2 pt-2 border border-bottom-0">
+
+                        <div class="row recentComments py-3 border-bottom">                        
+                            <div class="col-4 cmnt-sm-img-box">
+                                <img class="cmnt-img rounded" src="assets/img/featured/1.jpg" alt="">
+                            </div>
+                            <div class="col-8 cmnt-post-small px-2">
+                                <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row recentComments py-3 border-bottom">                        
+                            <div class="col-4 cmnt-sm-img-box">
+                                <img class="cmnt-img rounded" src="assets/img/featured/4.jpg" alt="">
+                            </div>
+                            <div class="col-8 cmnt-post-small px-2">
+                                <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>  
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p> 
+                            </div>
+                        </div>
+                        
+                        <div class="row recentComments py-3 border-bottom">                        
+                            <div class="col-4 cmnt-sm-img-box">
+                                <img class="cmnt-img rounded" src="assets/img/featured/3.jpg" alt="">
+                            </div>
+                            <div class="col-8 cmnt-post-small px-2">
+                                <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row recentComments py-3 border-bottom">                        
+                            <div class="col-4 cmnt-sm-img-box">
+                                <img class="cmnt-img rounded" src="assets/img/featured/1.jpg" alt="">
+                            </div>
+                            <div class="col-8 cmnt-post-small px-2">
+                                <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row recentComments py-3 border-bottom">                        
+                            <div class="col-4 cmnt-sm-img-box">
+                                <img class="cmnt-img rounded" src="assets/img/featured/2.jpg" alt="">
+                            </div>
+                            <div class="col-8 cmnt-post-small px-2">
+                                <a href="#" class="cmnt-post-title">Iure offacilis numquam quaerat veniam.</a>   
+                                <p class="text-muted post-date">
+                                    <i class="far fa-calendar-alt"></i> July 21, 2021
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -277,8 +325,8 @@
                     </div>
                 </div>                   
                 
-                <div class="row twitter py-3">                        
-                    <div class="col-12">
+                <div class="row twitter">                        
+                    <div class="col-12 border my-2 py-2">
                         
                         <a class="twitter-timeline" data-height="600" href="https://twitter.com/mahadixyz?ref_src=twsrc%5Etfw">Tweets by Mahadixyz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         
@@ -294,8 +342,8 @@
                     </div>
                 </div>                   
                 
-                <div class="row topics py-3">                        
-                    <div class="col-12">
+                <div class="row topics">                        
+                    <div class="col-12 my-2 py-2 border">
                         <a href="#" class="btn btn-sm btn-outline-primary rounded-0 my-1">
                             Science <span class="badge bg-secondary">4</span>
                         </a>
@@ -341,7 +389,10 @@
                 <!-- Topics  End -->
                 
             </div>
+            <!-- Sidebar End -->
+
         </div>
+
     </div> 
     <!-- Main Layout End -->
     

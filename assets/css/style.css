@@ -11323,7 +11323,6 @@ textarea.form-control-lg {
   background-color: #0f7dc2;
 }
 .sidebar .recentComments {
-  height: 120px;
   position: relative;
   box-sizing: border-box;
 }
@@ -11501,6 +11500,88 @@ footer.container .footer-bottom .faIcons .nav-item a {
 }
 .postDetails .figure .figure-caption {
   color: #6522f3;
+}
+
+.morePostsBox {
+  box-sizing: border-box;
+  padding: 0 0.7rem;
+}
+.morePostsBox .mp-title {
+  border-bottom: 2px solid #1c2dd5;
+  font-size: 1.5rem;
+}
+.morePostsBox .box-left {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+@media (max-width: 991.98px) {
+  .morePostsBox .box-left {
+    padding: 0.2rem 0;
+  }
+}
+.morePostsBox .box-right {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+@media (max-width: 991.98px) {
+  .morePostsBox .box-right {
+    padding: 0.2rem 0;
+  }
+}
+.morePostsBox .morePosts {
+  position: relative;
+  box-sizing: border-box;
+}
+.morePostsBox .morePosts .mp-img-box {
+  position: relative;
+  overflow: hidden;
+}
+.morePostsBox .morePosts .mp-img-box .mp-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 991.98px) {
+  .morePostsBox .morePosts .mp-img-box .mp-img {
+    height: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .morePostsBox .morePosts .mp-img-box .mp-img {
+    height: 100px;
+  }
+}
+.morePostsBox .morePosts .mp-post-small .mp-post-title {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #6522f3;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .morePostsBox .morePosts .mp-post-small .mp-post-title {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .morePostsBox .morePosts .mp-post-small .mp-post-title {
+    font-size: 1.2rem;
+  }
+}
+.morePostsBox .morePosts .mp-post-small .post-date {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 991.98px) {
+  .morePostsBox .morePosts .mp-post-small .post-date {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .morePostsBox .morePosts .mp-post-small .post-date {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
