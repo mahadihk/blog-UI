@@ -95,38 +95,38 @@
         
         .btn-linkedin
         {
-            background-color: #0e76a8;
+            background-color: $linkedin;
             
             &:hover
             {
-                background-color: #035074;
+                background-color: $linkedin-h;
             }
         }
         .btn-youtube
         {
-            background-color: #ff0000;
+            background-color: $youtube;
             
             &:hover
             {
-                background-color: #be0707;
+                background-color: $youtube-h;
             }
         }
         .btn-facebook
         {
-            background-color: #4267B2;
+            background-color: $facebook;
             
             &:hover
             {
-                background-color: #2c4d8f;
+                background-color: $facebook-h;
             }
         }
         .btn-twitter
         {
-            background-color: #1DA1F2;
+            background-color: $twitter;
             
             &:hover
             {
-                background-color: #0f7dc2;
+                background-color: $twitter-h;
             }
         }
     }

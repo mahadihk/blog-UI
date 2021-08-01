@@ -1,0 +1,49 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// Contact Page
+.contactSocial
+{
+
+    .con-link, .con-loc
+    {
+        text-decoration: none;
+        color: $primary;
+        font-size: 1.3rem;
+    }
+
+    .fa
+    {
+        font-size: 1.4rem;
+    }
+
+    .fa-facebook
+    {
+        color: $facebook;
+    }
+
+    .fa-linkedin
+    {
+        color: $linkedin;
+    }
+
+    .fa-twitter
+    {
+        color: $twitter;
+    }
+
+    .fa-envelope
+    {
+        color: $secondary;
+    }
+
+    .fa-map-marker-alt
+    {
+        color: $primary;
+    }
+
+    .fa-globe-asia
+    {
+        color: $secondary;
+    }
+}

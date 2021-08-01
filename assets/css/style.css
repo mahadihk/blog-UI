@@ -11605,4 +11605,31 @@ footer.container .footer-bottom .faIcons .nav-item a {
   }
 }
 
+.contactSocial .con-link, .contactSocial .con-loc {
+  text-decoration: none;
+  color: #1c2dd5;
+  font-size: 1.3rem;
+}
+.contactSocial .fa {
+  font-size: 1.4rem;
+}
+.contactSocial .fa-facebook {
+  color: #4267B2;
+}
+.contactSocial .fa-linkedin {
+  color: #0e76a8;
+}
+.contactSocial .fa-twitter {
+  color: #1DA1F2;
+}
+.contactSocial .fa-envelope {
+  color: #6522f3;
+}
+.contactSocial .fa-map-marker-alt {
+  color: #1c2dd5;
+}
+.contactSocial .fa-globe-asia {
+  color: #6522f3;
+}
+
 /*# sourceMappingURL=style.css.map */
