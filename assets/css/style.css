@@ -11048,7 +11048,7 @@ textarea.form-control-lg {
 }
 .catBox .catPostBox .catPostText {
   position: absolute;
-  top: 130px;
+  top: 175px;
   padding: 1.5rem;
   width: 86%;
   left: 7%;
@@ -11056,9 +11056,15 @@ textarea.form-control-lg {
   background-color: #fbfbfb;
   box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
 }
+@media (max-width: 1199.98px) {
+  .catBox .catPostBox .catPostText {
+    top: 160px;
+    padding: 1.2rem;
+  }
+}
 @media (max-width: 991.98px) {
   .catBox .catPostBox .catPostText {
-    top: 125px;
+    top: 120px;
     padding: 1.2rem;
   }
 }

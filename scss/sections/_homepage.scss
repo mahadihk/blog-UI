@@ -223,7 +223,7 @@
         .catPostText
         {
             position: absolute;
-            top: 130px;
+            top: 175px;
             padding: 1.5rem;
             width: 86%;
             left: 7%;
@@ -231,9 +231,15 @@
             background-color: #fbfbfb;
             box-shadow: 0px 10px 20px 0px rgba(153, 153, 153, 0.1);
 
+            @include media-breakpoint-down(xl)
+            {
+                top: 160px;
+                padding: 1.2rem;
+            }
+
             @include media-breakpoint-down(lg)
             {
-                top: 125px;
+                top: 120px;
                 padding: 1.2rem;
             }
 
